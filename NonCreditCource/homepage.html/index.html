@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="images">
+        <img class="mySlides" src="genji2.jpg" alt="">
+        <img class="mySlides" src="cassidyy.jpg" alt="">
+        <img class="mySlides" src="hanzooo.jpg" alt="">
+    </section>
+        <div class="outside">
+        <div class="note" >
+            <h2 class="headd" >THE BAND</h2>
+            <p class="mid" ><i>We love OW</i></p>
+            <p class="page" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, repudiandae! Laborum similique quibusdam, repudiandae a inventore cupiditate ipsam non porro. Saepe, earum est debitis nobis similique officiis illum veritatis vel sequi ab totam impedit? Illum, quibusdam? Eos unde deserunt molestias quae cum fugit esse officia consectetur omnis, cupiditate tempora inventore accusantium doloribus illo qui amet? Accusamus exercitationem explicabo eum reiciendis optio vero recusandae et architecto beatae rerum animi odio doloremque nihil tempore nesciunt molestias porro veniam iure a ducimus unde, voluptatibus nostrum tenetur modi? Laboriosam ipsam, in dolorem ullam culpa aperiam dolor repudiandae saepe sed unde fugit? Laudantium totam fuga dignissimos velit eligendi qui? Sequi temporibus natus placeat fugit! Aut iusto nobis alias, soluta debitis maxime hic eum eligendi perspiciatis veritatis, quas quae magnam molestias distinctio repellat dicta. Quaerat iste deserunt quos veritatis modi dolorem nam non praesentium labore, dignissimos exercitationem dicta, perspiciatis fugit adipisci? Tenetur aut fugiat quisquam totam!</p>
+        </div>
+    </div>
+    <div class="info">
+        <div class="innerinfo">
+            <h4>GENJI</h4>
+            <img src="genjii.JPG" alt="">
+            <p>The cyborg ninja Genji Shimada has made peace with the augmented body he once rejected, and in doing so, he has discovered a higher humanity.</p>
+        </div>
+        <div class="innerinfo">
+            <h4>CASSIDY</h4>
+            <img src="cassidy.jpg" alt="">
+            <p>Armed with his Peacekeeper revolver, the outlaw Cole Cassidy doles out justice on his own terms.</p>
+        </div>
+        <div class="innerinfo">
+            <h4>HANZO</h4>
+            <img src="hanzo.jpg" alt="">
+            <p>Mastering his skills as a bowman and an assassin, Hanzo Shimada strives to prove himself as a warrior without peer.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 by Linkin Park.</p>
+        <div class="foot-con">
+            <ul class="foot-list" >
+                <li><a href="https://www.facebook.com/PlayOverwatch/" target="_blank"><i class="ri-facebook-circle-fill"></i></a></li>
+                <li><a href="https://www.instagram.com/playoverwatch/"><i class="ri-instagram-fill"></i></a></li>
+                <li><a href="https://www.youtube.com/PlayOverwatch"><i class="ri-youtube-fill"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        overflow: scroll;
+    }
+    .navbar{
+        height: 40px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+    }
+    .menu li{
+        padding-left: 20px;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+    }
+    .menu li a:hover{
+        background-color: greenyellow;
+    }
+    .images img{
+        height: 100%;
+        width: 100%;
+    }
+    .note{
+        justify-content: center;
+        width: 50%;
+    }
+    .headd{
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    .mid{
+        margin: 10px 0 0;
+        text-align: center;
+        opacity: 30%;
+    }
+    .page{
+        margin: 10px 0 0;
+        text-align: justify;
+    }  
+    .outside{
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+    .innerinfo{
+        height: auto;
+        width: 20%;
+        background-color: black;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        color: #fff;
+        padding: 15px;
+        text-align: justify;
+    }
+    .innerinfo img{
+        max-width: 100%;
+    }
+    .innerinfo h4{
+        text-align: center;
+        margin: 5px;
+        color: #fff;
+        text-decoration: underline;
+    }
+    footer{
+        height: auto;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+    }
+    footer p{
+        padding: 5px;
+        color: #fff;
+        text-align: center;
+        font-size: smaller;
+    }
+    .foot-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    .foot-list li a{
+        text-decoration: none;
+    }
+    .foot-list li a i{
+        color: #fff;
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    .foot-list li a i:hover{
+        background-color: greenyellow;
+    }
+</style>
+<script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>

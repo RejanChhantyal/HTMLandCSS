@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div is="box1" class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</body>
+</html>
+<style>
+    body{
+        min-height: 400px;
+        border: 5px solid black;
+        display: flex;
+        gap: 20px;
+
+    }
+
+    #box1{
+        flex-grow: 1;//for automaticlly grow box size
+        flex-shrink: 1;//1 for to srink if page get small and 0 is not it is automatically setted
+        max_width: 300px; for if it is growing and you want to put a limit to how much you want to grow same as width
+    }
+
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        font-size: 40pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    display: grid;
+    place-content: center;
+    //
+    this two line work same as justfy content and align item feComponentTransfer
+    using grid method
+    flex-wrsp: wrap; this will make if the page sring then  the overflowing box will gone in second line or other
+    
+</style>

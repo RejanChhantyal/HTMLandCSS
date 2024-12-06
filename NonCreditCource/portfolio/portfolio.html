@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojip Chhantyal</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            overflow: scroll;
+            background-color: #f4f4f4;
+        }
+        .big {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+        .first {
+            background-color: black;
+            min-width: 200px;
+            padding: 20px 10px;
+            color: wheat;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .second {
+            flex-grow: 1;
+            padding: 30px;
+            background-color: green;
+            color: white;
+        }
+        .img1 {
+            width: 70%;
+            aspect-ratio: 1;
+            border-radius: 10px;
+        }
+        .list li, .social_media li {
+            list-style: none;
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+        .social_media {
+            display: flex;
+        }
+        .social_media li {
+            margin-right: 10px;
+        }
+        .c_prog {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <div class="first">
+            <img class="img1" src="IMG_0729 copy (1).jpg" alt="Profile Picture">
+            <h4>Rojip Chhantyal</h4>
+            <ul class="list">
+                <li><a href="#"><i class="ri-microsoft-fill"></i> PORTFOLIO</a></li>
+                <li><a href="#"><i class="ri-user-3-line"></i> ABOUT</a></li>
+                <li><a href="#"><i class="ri-mail-line"></i> CONTENT</a></li>
+            </ul>
+            <ul class="social_media">
+                <li><a href="#"><i class="ri-facebook-box-fill"></i></a></li>
+                <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+            </ul>
+        </div>
+        <div class="second">
+            <h3>My Portfolio</h3>
+            <p>Hello! I'm Rojip Chhantyal, a passionate coder and creative thinker...</p>
+            <h4>My Skills</h4>
+            <ul class="my_skills">
+                <li><a id="c" href="#" onclick="showCProg()">C programming</a></li>
+                <li><a href="#">Skill 2</a></li>
+                <li><a href="#">Skill 3</a></li>
+            </ul>
+            <div class="c_prog" id="c_p">
+                <h2>My Skills in C programming</h2>
+                <p>I have expertise in writing efficient algorithms, understanding data structures, and solving real-world problems using the C programming language.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the C programming section
+        function showCProg() {
+            document.getElementById("c_p").style.display = "block";
+        }
+    </script>
+</body>
+</html>

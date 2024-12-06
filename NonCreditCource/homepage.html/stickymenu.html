@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <a id="mySlides"  onclick="w3_open()"><i class="ri-menu-line"></i></a>
+        <a href="">My Food</a>
+        <a class="maill" href="">Mail</a>
+    </nav>
+    <div class="slides" id="mySidebar">
+        <a class="cm" href="" onclick=" w3_close()">Close Menu</a>
+        <a class="h" href="">Home</a>
+        <a class="a" href="">About</a>
+    </div>
+    <script>
+        function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+        <div class="first">
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+            <div class="content">
+                <img src="1.jpg" alt="">
+                <h3>Very Good Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab aut et odio ex dicta suscipit iusto, id veniam aspernatur?</p>
+            </div>
+        </div>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        /* background-color: black; */
+        overflow: scroll;
+    }
+    nav{
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        color: black;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+    }
+    nav a{
+        color: black;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: larger;
+        font-weight: 800;
+        padding: 0 10px 0 10px;
+    }
+    .maill{
+        margin-right: 20px;
+    }
+    .slides {
+        display: none;
+        height: 900px;
+        width: 200px;
+        background-color: #fff;
+        width: 30%;
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+    .slides a{
+        display: flex;
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 800;
+        padding: 10px 3px;
+    } 
+    #mySildes{
+        background-color: #fff;
+        height: 300px;
+        width: 30px;
+        font-weight: bold;
+    }
+    .slides a:hover{
+        background-color: gray;
+    }
+    nav a:hover{
+        background-color: gray;
+    }
+    .first{
+        height: auto;
+        width: auto;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .second{
+        height: auto;
+        width: auto;
+        /* background-color: pink; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .content{
+        height: auto;
+        width: auto;
+        /* background-color: red; */
+        margin: 20px 0 20px 0;
+        padding: 7px;
+        text-align: justify;
+    }
+    .content h3{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .content p{
+        text-align: center;
+    }
+    .content img{
+        display: block;
+        aspect-ratio: 2/3;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+</style>

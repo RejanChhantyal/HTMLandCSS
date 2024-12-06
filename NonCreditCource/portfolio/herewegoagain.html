@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojip Chhantyal</title>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Portfolio</h1>
+        <ul class="nav_cont">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="first_page">
+            <div class="img1">
+                <img src="IMG_0729_copy__1_-removebg-preview.png" alt="">
+            </div>
+            <div class="con1">
+                <h1>About Me</h1>
+                <p>Hello! I'm Rojip Chhantyal, a beginner in the IT field, currently studying Bachelor's in Computer Applications at Southwestern State College.<br>I’m passionate about learning new things and growing in this ever-evolving field.
+
+                    I’m proficient in C programming and have a good understanding of HTML and CSS, which allow me to build basic web pages. Learning C has made it easier for me to pick up other programming languages like JavaScript, which I’m excited to explore next.
+                    
+                    <br>If you have any suggestions or ideas, feel free to share them—I’m always open to learning and improving! 😊</p>
+            </div>
+        </div>
+        <div class="second_page">
+            <h1>Projects</h1>
+            <div class="list_project">
+                <h3 style="padding-top: 10px;">Projects In C:</h3>
+                <ul>
+                    <li><a href="">Guess The Number</a></li>
+                    <li><a href="">Calculater</a></li>
+                    <li><a href="">ATM Tranctions</a></li>
+                </ul>
+           
+                <h3>Projects In HTML CSS:</h3>
+                <ul>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Copy of Saleforce</a></li>
+                    <li><a href="">Card Game</a></li>
+                </ul>
+                <h3>Projects In JavaScrips:</h3>
+                <ul>
+                    <li>Not At currently learning</li>
+                </ul>
+            </div>
+        </div>
+        <div class="third_page">
+            <h1>Achievements</h1>
+            <div class="row1">
+                <div class="ach_box">
+                    <h3>Academic Achievements</h3>
+                    <ul>
+                        <li>Passed high school with a very good GPA</li>
+                        <li>Passing the C programming course with a strong understanding.</li>
+                        <li>Successfully learning HTML and CSS for web development basics.</li>
+                    </ul>
+                </div>
+                <div class="ach_box">
+                    <h3>Personal Projects</h3>
+                    <ul>
+                        <li>Created small projects using C programming (e.g., pattern printing, mini-calculators, or other logical applications).</li>
+                        <li>Developed simple websites with HTML and CSS.</li>
+                        <li>Built a practical application or tool that demonstrates your skills.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="ach_box2">
+                    <h3>Extra-Curricular Activities</h3>
+                    <ul>
+                        <li>Skilled at video games, enjoying strategic and creative gameplay.</li>
+                        <li>Actively plays futsal, showcasing teamwork and athletic skills.</li>
+                        <li>Focused on self-growth, constantly learning and improving.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fourth_page">
+            <h1>Contact</h1>
+            <div class="messege">
+                <input type="email" placeholder="Enter Email">
+                <input type="text" placeholder="Enter Your Massage">
+                <div class="send">
+                    <p>Send Messege</p>
+                    <button> Send </button>
+                </div>
+            </div>
+            <div class="more">
+                <a id="meme_more" href="#" onclick="memeopen(event)"  >more info:</a>
+            </div>
+            <div style="text-align: right;" id="meme_w" class="social">
+                <a style="text-decoration: none;" id="meme_m" href="#" onclick="memeclose(event)"> X</a>
+                <a id="meme_cls" class="close" href=""></a>
+                <img src="Hera Pheri Tu Ja Re GIF - Hera Pheri Tu Ja Re Tu Jaa Rey - Discover & Share GIFs.gif" alt="">
+        </div>
+    </main>
+    <script>
+        function memeopen(event){
+            event.preventDefault();
+            document.getElementById("meme_w").style.display="block";
+        }
+        function memeclose(event){
+            event.preventDefault();
+            document.getElementById("meme_w").style.display="none";
+        }
+    </script>
+    <footer>
+        <div class="foot">
+            <p>Connect with me on:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rojip-chhantyal-aa3043304/"><i class='bx bxl-linkedin-square'>linkdin</i></a></li>
+                <li><a href="https://github.com/RejanChhantyal"><i class='bx bxl-github'>github</i></a></li>
+                <li><a href="https://www.facebook.com/rejan.chhantyal.3"><i class='bx bxl-facebook-square'>facebook</i></a></li>
+                <li><a href=""><i class='bx bxs-envelope'>rejanchhatyal122@gmail.com</i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+    }
+    .social{
+        z-index: 5;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        display: none;
+    }
+    .navbar{
+        height: 60px;
+        width: 100%;
+        background-color: rgb(47, 47, 47);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar h1{
+        margin-left: 40px;
+    }
+    .nav_cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-right: 40px;
+    }
+    .nav_cont li{
+        flex: 1;
+        align-items: center;
+    }
+    .nav_cont li a:hover{
+        background-color: black;
+    }
+    .nav_cont li a{
+        text-decoration: none;
+        padding: 15px;
+    }
+    main{
+        width: 100%; 
+        background-color: black;
+    }
+    .first_page{
+        height: 100vh;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+    }
+    .second_page{
+        height: 100vh;
+    }
+    .third_page{
+        height: 100vh;
+        /* background-color: lime; */
+    }
+    .fourth_page{
+        height: 100vh;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img1{
+        height: 70%;
+        width: 30%;
+        overflow: hidden;
+        border-radius: 50%;
+        border-bottom: 4px solid white;
+    }
+    .con1{
+        height: auto;
+        width: 40%;
+        margin-left: 50px;
+        border-radius: 20px;
+    }
+    .con1:hover{
+        background-color: rgb(47, 47, 47);
+    }
+    .con1 h1{
+        text-decoration: underline;
+        margin: 20px;
+    }
+    .con1 p{
+        margin: 0 20px 20px 20px;
+        text-align: justify;
+    }
+    .img1 img{
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+    }
+    /* ul{
+        background-color: green;
+    } */
+    .second_page h1{
+        text-align: center;
+        margin: 50px 0 0 0;
+        text-decoration: underline white;
+    }
+    .list_project{
+        margin: 10px 0;
+        border-radius: 20px;
+    }
+    .list_project ul{
+        list-style: none;
+    }
+    .list_project h3{
+        margin: 20px 10px 4px 10px;
+        text-decoration: underline;
+    }
+    .list_project ul li{
+        padding: 15px;
+        background: rgb(47, 47, 47);
+    }
+    .list_project ul li a{
+        text-decoration: none;
+    }
+    .list_project ul li:hover{
+        background-color: black;
+    }
+    .third_page h3{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .third_page h1{
+        padding-top: 40px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .row1{
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .row2{
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ach_box{
+        height: 85%;
+        width: 40%;
+        background-color: black;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .ach_box:hover{
+        background-color: rgb(47, 47, 47);
+    }
+    .ach_box ul{
+        background: none;
+    }
+    .ach_box ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    .ach_box2{
+        height: 85%;
+        width: 40%;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .ach_box2:hover{
+        background-color: rgb(47, 47, 47);
+    }
+    .ach_box2 ul{
+        background: none;
+    }
+    .ach_box2 ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    .fourth_page h1{
+        text-align: center;
+        padding-top: 50px;
+        text-decoration: underline;
+    }
+    .messege{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        width: 350px;
+        margin-top: 70px;
+        border-radius: 20px;
+    }
+    .messege:hover{
+        background-color: rgb(47, 47, 47);
+    }
+    input{
+        width: 250px;
+        height: 25px;
+        margin: 10px 0 0 0;
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        outline: none;
+        border-radius: 10px;
+        padding: 5px;
+        
+        
+    }
+    .send{
+        width: 250px;
+        height: 25px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: right;
+    }
+    .send p{
+        margin-right: 5px;
+    }
+    button{
+        color: white;
+        width: 50px;
+        height: 25px;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: rgb(98, 97, 97);
+    }
+    .social{
+        height: 250px;
+        width: 450px;
+        background: #000; 
+    }
+    .foot{
+        height: 50px;
+        background-color: rgb(47, 47, 47);
+        display: flex;
+        align-items: center;
+    }
+    .foot p{
+        padding-left: 200px;
+    }
+    .foot ul{
+        display: flex;
+        justify-content: center;
+    }
+    .foot ul li{
+
+        list-style: none;
+        padding: 5px;
+        margin-left: 20px;
+
+    }
+    .foot ul li:hover{
+        background-color: black;
+    }
+</style>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Sell Animals</title>
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav>
+        <h3>ANI.COM</h3>
+        <ul>
+            <li id="search" ><input type="search" name="" id="" placeholder="search"><button>GO</button></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="menuu" id="menu"><a href="" onclick="menu_open(event)" ><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+    <div class="click_menu" id="open_menu">
+        <a class="cm" href="" onclick="menu_close(event)">Close Menu</a>
+        <a class="h" href="humans.html">Humans</a>
+        <a class="a" href="animals.html">Animals</a>
+        <a class="" href="aliens.html">Aliens</a>
+    </div>
+    <main>
+        <div class="human-info">
+            <h2>Buy Every Type Of Animals From Here:</h2>
+        </div>
+        <div class="items">
+            <div class="info">
+                <h3>MAMMELS</h3>
+                <img src="mammals.jpg" alt="">
+                <p class="read">Warm-blooded animals with hair or fur that usually give birth to live young. Buy Now here:              
+                </p>
+                <p class="total-price">
+                    <span><i class='bx bx-rupee'></i></span>
+                    <span id="price">50000</span>
+                </p>
+                <div class="quantity">
+                    <button class="btn minus-btn disabled" type="button">-</button>
+                    <input type="text" id="quantity" value="1">
+                    <button class="btn plus-btn" type="button">+</button>
+                </div>
+                <a href="buysecess.html"><button type="submit" >BUY NOW</button></a>
+            </div>
+            <div class="info">
+                <h3>BIRDS</h3>
+                <img src="birdss.jpg" alt="">
+                <p class="read">Warm-blooded animals with feathers, wings, and beaks. Examples include eagle.Buy Now here:
+                </p>
+                <p class="total-price">
+                    <span><i class='bx bx-rupee'></i></span>
+                    <span id="price1">40000</span>
+                </p>
+                <div class="quantity">
+                    <button class="btn minus1-btn disabled" type="button">-</button>
+                    <input type="text" id="quantity1" value="1">
+                    <button class="btn plus1-btn" type="button">+</button>
+                </div>
+                <a href="buysecess.html"><button type="submit" >BUY NOW</button></a>
+            </div>
+            <div class="info">
+                <h3>REPTILES</h3>
+                <img src="reptiles.jpg" alt="">
+                <p class="read">Cold-blooded animals with scales that lay eggs. Examples include snakes.Buy Now here
+                </p>
+                <p class="total-price">
+                    <span><i class='bx bx-rupee'></i></span>
+                    <span id="price2">5500</span>
+                </p>
+                <div class="quantity">
+                    <button class="btn minus2-btn disabled" type="button">-</button>
+                    <input type="text" id="quantity2" value="1">
+                    <button class="btn plus2-btn" type="button">+</button>
+                </div>
+                <a href="buysecess.html"><button type="submit" >BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="count">
+            <a href=""><i class='bx bx-chevrons-left'></i></a>
+            <a class="num-count" href="">1</a>
+            <a style="border-left: none;" class="num-count" href="">.</a>
+            <a href=""><i class='bx bx-chevrons-right'></i></a>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-logo">
+            <h4>ANI.COM</h4>
+        </div>
+        <p>© 2024 by ANI.COM..</p>
+    </footer>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #cfcfcf;
+    }
+    nav{
+        background-color: rgb(60, 0, 255);
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0 10px 0 10px;
+        font-size: large;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+    }
+    nav ul li:hover{
+        background-color: darkblue;
+    }
+    .click_menu{
+        display: none;
+        background-color: blue;
+        width: 23%;
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        right: 0;
+    }
+    .click_menu a{
+        display: flex;
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 800;
+        padding: 10px 3px;
+        padding-left: 10px;
+    }
+    .click_menu a:hover{
+        background-color: darkblue;
+    }
+    #search{
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+    #search input{
+        padding: 2px;
+    }
+    #search button{
+        padding: 2px;
+        margin-left: 2px;
+    }
+    main{
+        flex: 1;
+    }
+    .items{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .info{
+        height: 310px;
+        width: 200px;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .info h3{
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .info img{
+        aspect-ratio: 6/9;
+        height: 40%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 10px;
+    }
+    .info a{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .info a button{
+        font-size: x-small;
+        text-align: center;
+        background: white;
+        border: none;
+        padding: 4px;
+        border-radius: 5pc;
+        margin-top: 2px;
+    }
+    .human-info{
+        text-align: center;
+        margin: 20px;
+    }
+    .human-info h2{
+        text-decoration: underline;
+        margin-top: 70px;
+    }
+    .quantity{
+        display: flex;
+        justify-content: center;
+        /* padding-top: 3px; */
+    }
+    .info a button:hover{
+        background-color: rgb(200, 200, 200);
+    }
+    .quantity button{
+        width: 20px;
+        height: 20px;
+        border: none;
+        color: black;
+        background-color: rgb(199, 198, 198);
+        border-radius: 0;
+        border-radius: 5px;
+    }
+    .quantity input{
+        text-align: center;
+        width: 30px;
+        height: 20px;
+        border: none;
+        border-radius: 2px;
+    }
+    .total-price{
+        text-align: center;
+        font-size: large;
+        background-color: #dcdcdc;
+        margin-bottom: 2px;
+    }
+    .total-price .fa-rupee{
+        display: inline-flex;
+        font-size: 90%;
+    }
+    .read{
+        color: black;
+        text-align: justify;
+    }
+    .count{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: relative;
+        bottom: 0;
+        margin-top: 15%;
+    }
+    .count a{
+        color: black;
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+        text-decoration: none;
+    }
+    .num-count{
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+    }
+    .count a:hover{
+        background-color: rgb(212, 212, 212);
+    }
+    footer{
+        background-color: blue;
+        width: 100%;
+        height: 70px;
+    }
+    .foot-logo{
+        background-color: rgb(20, 178, 235);
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+<script>
+    function menu_open(event) {
+    event.preventDefault();
+    document.getElementById("open_menu").style.display = "block";
+}
+        
+    function menu_close(event) {
+    event.preventDefault();
+    document.getElementById("open_menu").style.display = "none";
+}
+
+//setting default attribute to disabled of minus button
+document.querySelector(".minus-btn").setAttribute("disabled","disabled");
+
+//taking value to increment decrement input value
+var valueCount
+
+//taking price value in veriable
+var price = document.getElementById("price").innerText;
+
+//price calculation function
+function priceTotal(){
+    var total = valueCount*price;
+    document.getElementById("price").innerText = total 
+}
+
+//plus button
+document.querySelector(".plus-btn").addEventListener("click",function(){
+
+    //getting value of input
+    valueCount = document.getElementById("quantity").value;
+
+    //input calue increment by 1
+    valueCount++;
+
+    //setting increment input value
+    document.getElementById("quantity").value = valueCount
+
+    if(valueCount > 1){
+        document.querySelector(".minus-btn").removeAttribute("disabled");
+        document.querySelector(".minus-btn").classList.remove("disabled")
+    }
+    priceTotal()
+})
+
+//minus button
+document.querySelector(".minus-btn").addEventListener("click",function(){
+    valueCount = document.getElementById("quantity").value;
+    valueCount--;
+    document.getElementById("quantity").value = valueCount
+
+    if(valueCount == 1){
+        document.querySelector(".minus-btn").setAttribute("disabled","disabled")
+    }
+
+    //calling price function
+    priceTotal()
+})
+
+
+
+//setting default attribute to disabled of minus button
+document.querySelector(".minus1-btn").setAttribute("disabled","disabled");
+
+//taking value to increment decrement input value
+var valueCount1
+
+//taking price value in veriable
+var price1 = document.getElementById("price1").innerText;
+
+//price calculation function
+function priceTotal1(){
+    var total1 = valueCount1*price1;
+    document.getElementById("price1").innerText = total1 
+}
+
+//plus button
+document.querySelector(".plus1-btn").addEventListener("click",function(){
+
+    //getting value of input
+    valueCount1 = document.getElementById("quantity1").value;
+
+    //input calue increment by 1
+    valueCount1++;
+
+    //setting increment input value
+    document.getElementById("quantity1").value = valueCount1
+
+    if(valueCount1 > 1){
+        document.querySelector(".minus1-btn").removeAttribute("disabled");
+        document.querySelector(".minus1-btn").classList.remove("disabled")
+    }
+    priceTotal1()
+})
+
+//minus button
+document.querySelector(".minus1-btn").addEventListener("click",function(){
+    valueCount1 = document.getElementById("quantity1").value;
+    valueCount1--;
+    document.getElementById("quantity1").value = valueCount1
+
+    if(valueCount1 == 1){
+        document.querySelector(".minus1-btn").setAttribute("disabled","disabled")
+    }
+
+    //calling price function
+    priceTotal1()
+})
+
+
+//setting default attribute to disabled of minus button
+document.querySelector(".minus2-btn").setAttribute("disabled","disabled");
+
+//taking value to increment decrement input value
+var valueCount2
+
+//taking price value in veriable
+var price2 = document.getElementById("price1").innerText;
+
+//price calculation function
+function priceTotal2(){
+    var total2 = valueCount2*price2;
+    document.getElementById("price2").innerText = total2
+}
+
+//plus button
+document.querySelector(".plus2-btn").addEventListener("click",function(){
+
+    //getting value of input
+    valueCount2 = document.getElementById("quantity2").value;
+
+    //input calue increment by 1
+    valueCount2++;
+
+    //setting increment input value
+    document.getElementById("quantity2").value = valueCount2
+
+    if(valueCount2 > 1){
+        document.querySelector(".minus2-btn").removeAttribute("disabled");
+        document.querySelector(".minus2-btn").classList.remove("disabled")
+    }
+    priceTotal2()
+})
+
+//minus button
+document.querySelector(".minus2-btn").addEventListener("click",function(){
+    valueCount2 = document.getElementById("quantity2").value;
+    valueCount2--;
+    document.getElementById("quantity2").value = valueCount2
+
+    if(valueCount2 == 1){
+        document.querySelector(".minus2-btn").setAttribute("disabled","disabled")
+    }
+
+    //calling price function
+    priceTotal2()
+})
+</script>

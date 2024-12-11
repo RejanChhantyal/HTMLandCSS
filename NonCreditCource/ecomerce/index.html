@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani.com</title>
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <h3>ANI.COM</h3>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="menuu" id="menu"><a href="" onclick="menu_open(event)" ><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+    <div class="click_menu" id="open_menu">
+        <a class="cm" href="" onclick=" menu_close(event)">Close Menu</a>
+        <a class="h" href="humans.html">Humans</a>
+        <a class="a" href="animal.html">Animals</a>
+        <a class="" href="aliens.html">Aliens</a>
+    </div>
+    <section class="discounts">
+        <div class="images">
+            <img src="humans.jpg" alt="">
+            <div class="info">
+                <h3 class="info_in">10% OFF ON HUMANS</h3>
+                <a class="info_in" href="humans.html"><button>BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="animals.jpg" alt="">
+            <div class="info">
+                <h3 class="info_in">40% OFF ON ANIMALS</h3>
+                <a class="info_in" href="animals.html"><button>BUY NOW</button></a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="alien.jpg" alt="">
+            <div class="info">
+                <h3 class="info_in">10% OFF ON ALIENS</h3>
+                <a class="info_in" href="aliens.html"><button>BUY NOW</button></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-logo">
+            <h4>ANI.COM</h4>
+        </div>
+        <p>© 2024 by ANI.COM..</p>
+    </footer>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: #d8d8d8;
+    }
+    nav{
+        background-color: rgb(60, 0, 255);
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 0 10px 0 10px;
+        font-size: large;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+    }
+    nav ul li:hover{
+        background-color: darkblue;
+    }
+    .click_menu{
+        display: none;
+        background-color: blue;
+        width: 23%;
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        right: 0;
+    }
+    .click_menu a{
+        display: flex;
+        color: black;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 800;
+        padding: 10px 3px;
+        padding-left: 10px;
+    }
+    .click_menu a:hover{
+        background-color: darkblue;
+    }
+    .discounts{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        height: 90%;
+        width: 90%;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+    .images img{
+        height: 92%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: (6/9);
+        border-radius: 10px;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .info_in{
+        padding: 10px;
+    }
+    .info_in button{
+        border: none;
+        background-color: #e1e1e1;
+        padding: 3px 5px 3px 5px;
+        border-radius: 7px;
+    }
+    .info_in button:hover{
+        background-color: #fff;
+    }
+    footer{
+        background-color: blue;
+        width: 100%;
+        height: 70px;
+        position: relative;
+    }
+    .foot-logo{
+        background-color: rgb(60, 139, 235);
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+<script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("images");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+function menu_open(event) {
+    event.preventDefault();
+    document.getElementById("open_menu").style.display = "block";
+}
+        
+    function menu_close(event) {
+    event.preventDefault();
+    document.getElementById("open_menu").style.display = "none";
+}
+</script>

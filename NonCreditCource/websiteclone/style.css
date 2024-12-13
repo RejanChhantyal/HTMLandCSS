@@ -7,7 +7,7 @@
     body{
         height: 100vh;
         width: auto;
-        background: url('jangaa.jpg'); 
+        background: url(https://cdn.britannica.com/06/75906-050-16A53398/mango-fruits.jpg); 
         background-repeat:no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -332,7 +332,7 @@
     .fifth-images{
         width: 48%;
         height: 100%;
-        background: url(https://cdn.shopify.com/s/files/1/2636/1928/files/How-to-Grow-Cannabis_09013da1-c5fc-4672-8b42-50abae2a922c.jpg?v=1645199756);
+        background: url(https://www.lovethegarden.com/sites/default/files/content/article_images/AU/Mango-%20Harvest.png);
         background-position: center;
         background-size: cover;
         color: #fff;
@@ -340,7 +340,7 @@
     .fifth-image{
         width: 48%;
         height: 100%;
-        background: url(https://imgsrv2.voi.id/Xg0AUDtKIAP7Airb4anslT_E3_bTzCY3Zv3CGzClUjs/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8zOTM4NDEvMjAyNDA2MjgwOTAxLW1haW4uY3JvcHBlZF8xNzE5NTQwMDg1LmpwZw.jpg);
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBgCBFNjqr7AT2Pvl-X63XN72lHzwk-qhZw&s);
         background-position: center;
         background-size: cover;
         color: #fff;

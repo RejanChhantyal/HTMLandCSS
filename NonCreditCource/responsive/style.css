@@ -545,6 +545,9 @@ footer{
     color: green;
 }
 @media (max-width: 720px){
+    *{
+        column-count: pink  ;
+    }
     .menu li{
         list-style: none;
         display: none;
@@ -569,6 +572,12 @@ footer{
         font-size: small;
         width: 140px;
         margin-bottom: 5px;
+    }
+    .inner-row-column{
+        width: 50%;
+        height: 120%;
+        background-color: rgb(49, 49, 49);
+        box-shadow: 1px 1px 10px black;
     }
 }
 @media (max-width: 500px){

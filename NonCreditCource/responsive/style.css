@@ -545,9 +545,6 @@ footer{
     color: green;
 }
 @media (max-width: 720px){
-    *{
-        column-count: pink  ;
-    }
     .menu li{
         list-style: none;
         display: none;

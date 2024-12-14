@@ -132,6 +132,8 @@ nav{
     color: green;
     font-weight: 600;
     font-size: large;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .move-text:hover{
     color: black;
@@ -308,8 +310,9 @@ nav{
     width: 95%;
 }
 .fourth-page-row h2{
-    width: 150px;
-    padding: 10px;
+    position: relative;
+    width: 145px;
+    padding: 10px 5px 10px 10px;
     background-color: green;
     color: #fff;
 }
@@ -327,7 +330,7 @@ nav{
 }
 .inner-row-column h3{
     width: 200px;
-    padding: 5px;
+    padding: 5px 1px 5px 5px;
     background-color: rgb(182, 154, 0);
     color: #fff;
 }
@@ -382,7 +385,7 @@ nav{
 }
 .fifth-first-row h3{
     margin-top: 20px;
-    padding: 5px 10px 5px 10px;
+    padding: 7px 5px 5px 10px;
     width: 50px;
     color: #fff;
     background-color: red;
@@ -593,5 +596,17 @@ footer{
     }
     .review-text{
         margin-top: 36px;
+    }
+    .login-register button{
+        padding: 5px;
+    }
+    nav{
+        height: 60px;
+    }
+    .first-page-image-text button{
+        padding: 6px;
+    }
+    .first-page-image-text button a{
+        font-size: small;
     }
 }

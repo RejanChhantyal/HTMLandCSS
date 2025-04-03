@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Use defer when you include scripts in <head>, so they don’t block page loading! -->
+        <!-- In simple terms, defer makes sure your JavaScript runs only after the entire HTML is loaded, but it still downloads the script while the HTML is being processed. -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <input id="display" readonly>
+            <div class="butts">
+                <div class="oprators">
+                    <button id="first-child" class="opretors-butt" onclick="passValue('/')">/</button>
+                    <button class="opretors-butt" onclick="passValue('*')">*</button>
+                    <button class="opretors-butt" onclick="passValue('-')">-</button>
+                    <button class="opretors-butt" onclick="passValue('+')">+</button>
+                    <button id="last-child" class="opretors-butt" onclick="clearVal()">C</button>
+                </div>
+                <div class="numbers">
+                    <div class="first-row">
+                        <button class="numbers-butt" onclick="passValue('7')">7</button>
+                        <button class="numbers-butt" onclick="passValue('8')">8</button>
+                        <button class="numbers-butt" onclick="passValue('9')">9</button>
+                    </div>
+                    <div class="second-row">
+                        <button class="numbers-butt" onclick="passValue('4')">4</button>
+                        <button class="numbers-butt" onclick="passValue('5')">5</button>
+                        <button class="numbers-butt" onclick="passValue('6')">6</button>
+                    </div>
+                    <div class="third-row">
+                        <button class="numbers-butt" onclick="passValue('1')">1</button>
+                        <button class="numbers-butt" onclick="passValue('2')">2</button>
+                        <button class="numbers-butt" onclick="passValue('3')">3</button>
+                    </div>
+                    <div class="last-row">
+                        <button class="numbers-butt" onclick="passValue('0')">0</button>
+                        <button class="numbers-butt" onclick="passValue('.')">.</button>
+                        <div class="copyRight">
+                            <p>-rojip.c</p>
+                        </div>
+                    </div>
+                    <div class="equalto">
+                        <button class="equall" onclick="equal()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

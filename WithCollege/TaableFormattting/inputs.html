@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputsst</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Input Type in HTML</h1>
+    </div>
+    <main>
+        <!-- text type -->
+        <div class="text-type">
+            <h3>1.Text Type Input</h3>
+            <div>
+                <h4>Text Type Input</h4>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <h4>Email Type Input</h4>
+                <input type="email" name="" id="">
+            </div>
+            <div>
+                <h4>Password Type Input</h4>
+                <input type="password" name="" id="" value="">
+            </div>
+            <div>
+                <h4>Telephone Type Input</h4>
+                <input type="tel" name="" id="">
+            </div>
+            <div>
+                <h4>URL Type Input</h4>
+                <input type="url" name="" id="">
+            </div>
+        </div>
+
+        <!-- numeric type -->
+        <div class="text-type">
+            <h3>2.Numeric Type Input</h3>
+            <div>
+                <h4>Number Type Input</h4>
+                <input type="number" name="" id="">
+            </div>
+            <div>
+                <h4>Range Type Input</h4>
+                <input type="range" name="" id="">
+            </div>
+        </div>
+        
+
+        <!-- date and time type -->
+        <div class="text-type">
+            <h3>3.Date and Time Type Input</h3>
+            <div>
+                <h4>Date Type Input</h4>
+                <input type="date" name="" id="">
+            </div>
+            <div>
+                <h4>Date Time-Location Type Input</h4>
+                <input type="datetime-local" name="" id="">
+            </div>
+            <div>
+                <h4>Month Type Input</h4>
+                <input type="month" name="" id="">
+            </div>
+            <div>
+                <h4>Week Type Input</h4>
+                <input type="week" name="" id="">
+            </div>
+            <div>
+                <h4>Time Type Input</h4>
+                <input type="time" name="" id="">
+            </div>
+        </div>
+
+        <!-- Selection Type -->
+        <div class="text-type">
+            <h3>4.Selection Type Input</h3>
+            <div>
+                <h4>Checkbox Type Input</h4>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div>
+                <h4>Ratio Type Input</h4>
+                <input type="radio" name="" id="">
+            </div>
+            <div>
+                <h4>Select Type Input</h4>
+                <select name="" id="">
+                    <option value="1">okay</option>
+                    <option value="2">Not okay</option>
+                </select>
+            </div>
+            <div>
+                <h4>Week Type Input</h4>
+                <input type="week" name="" id="">
+            </div>
+            <div>
+                <h4>Time Type Input</h4>
+                <input type="time" name="" id="">
+            </div>
+        </div>
+
+
+        <!-- File and Button Type -->
+        <div class="text-type">
+            <h3>5.File and Button Type Input</h3>
+            <div>
+                <h4>file Type Input</h4>
+                <input type="file" name="" id="">
+            </div>
+            <div>
+                <h4>Submit Type Input</h4>
+                <input type="submit" name="" id="">
+            </div>
+            <div>
+                <h4>Reset Type Input</h4>
+                <input type="reset" name="" id="">
+            </div>
+            <div>
+                <h4>Button Type Input</h4>
+                <input type="button" name="" id="" style="background-color: blue; width: 20px;">
+            </div>
+        </div>
+
+        <!-- Hidden and Special -->
+        <div class="text-type">
+            <h3>6.Hidden and Special Type Input</h3>
+            <div>
+                <h4>Hidden Type Input</h4>
+                <p>Invisible input (For storing hidden value)</p>
+                <input type="hidden" name="" id="">
+            </div>
+            <div>
+                <h4>Search Type Input</h4>
+                <input type="search" name="" id="">
+            </div>
+            <div>
+                <h4>Color Type Input</h4>
+                <input type="color" name="" id="">
+            </div>
+        </div>
+
+        <!-- Input Attribute -->
+        <div class="text-type" style="height: 200px;">
+            <input type="text" readonly value="ony conent">
+            <input type="text" disabled value="click me">
+            <input type="hidden" value="anyValue">
+        </div>
+    </main>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .text-type{
+        height: 100v;
+        width: 30%;
+        background-color: rgb(130, 122, 122);
+    }
+    div{
+        padding: 4px;
+        background-color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+</style>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="rows">
+            <div class="image">
+                <img src="1739105366165.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="number">
+                    <span>1</span>
+                </div>
+                <h2>Read-made</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ducimus reprehenderit tempore pariatur architecto iste!</p>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="image">
+                <img src="1739105366172.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="number">
+                    <span>2</span>
+                </div>
+                <h2>Tailor Sweing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ducimus reprehenderit tempore pariatur architecto iste!</p>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="image">
+            <img src="1739105366182.jpg" alt="">
+
+            </div>
+            <div class="info">
+                <div class="number">
+                    <span>3</span>
+                </div>
+                <h2>Mesurement</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ducimus reprehenderit tempore pariatur architecto iste!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        line-height: 1.5;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rows{
+        height: 70%;
+        width: 20%;
+        margin: 20px;
+        transition: 0.5s;
+    }
+    .image{
+        height: 60%;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .info{
+        height: 40%;
+        position: relative;
+    }
+    h2{
+        padding-top: 7px;
+    }
+    .number{
+        background-color: rgb(194, 168, 20);
+        color: #fff;
+        width: 25px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 13px;
+        left: -30px;
+    }
+    .rows:hover{
+        flex: 1;
+    }
+</style>

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color1: rgb(236, 205, 0);
+    --color2: rgb(0, 136, 0);
+    --color3: rgb(176, 176, 176);
+}
+main{
+    height: 100vh;
+    background-color: red;
+    background: url(https://t3.ftcdn.net/jpg/02/87/76/00/360_F_287760066_COBeYwfeWuKtWnM9lm7cDCQESYQIoaNr.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.sheet{
+    height: 72%;
+    width: 50%;
+    background: linear-gradient(to right,var(--color1),var(--color3));
+    /* backdrop-filter: blur(10px); to make the background blur */
+    box-sizing: border-box;
+    padding-left: 4%;
+    border-radius: 20px;
+    box-shadow: 1px 4px 4px black;
+}
+.sheet h2{
+    font-size: 4rem;
+    text-decoration: underline;
+}
+.sheet li{
+    font-size: 2rem;
+    list-style: none;
+    padding: 8px 0;
+    position: relative;
+}
+.sheet li::before{
+    content: "\f14a";
+    font-family: "Font Awesome 5 Free";
+    color: var(--color2);
+    padding-right: 4px;
+}
+.sheet li:nth-child(6){
+    color: var(--color3);
+}

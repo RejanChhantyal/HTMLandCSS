@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 16vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+.logo{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+.logo h3 a{
+    height: 100%;
+    width: 42%;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    width: 52%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.link li a{
+    text-decoration: none;
+    color: #e8e8e8; 
+}
+.bgc{
+    padding: 12px 16px;
+    background-color: rgb(21, 126, 251);
+    border-radius: 4px;
+}
+#green{
+    background-color:rgb(93, 210, 142);
+}
+.first-page{
+    height: 100vh;
+    background: url(https://preview.colorlib.com/theme/jobportal/images/bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-color: rgba(44, 44, 44, 0.31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first-page-dark{
+    background-color: rgba(0, 0, 0, 0.249);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+}
+.info{
+    height: 38%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    line-height: 0.99;
+}
+#first-par{
+    position: absolute;
+    top: 0;
+    font-size: large;
+    color: #d5d5d5;
+}
+.cap{
+    font-size: 65px;
+    font-weight: 900;
+    color: #e8e8e8;
+    opacity: 0.9;
+    display: inline-block;
+}
+.job-info{
+    font-size: 60px;
+    font-weight: 300;
+}
+.boxx{
+    height: 25%;
+    width: 55%;
+}
+.upper-box{
+    height: 30%;
+    width: 40%;
+    text-align: start;
+    display: flex;
+    gap: 3px;
+}
+.job{
+    height: 100%;
+    width: 40%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #777777;
+}
+.candidate{
+    height: 100%;
+    width: 55%;
+    background-color: rgb(21, 126, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: #fff;
+}
+.lower-box{
+    height: 65%;
+    width: 140%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.input-container{
+    background-color: #fff;
+    height: 50%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: larger;
+    color: #b8b8b8;
+    border-radius: 4px;
+    border: 1px solid #b8b8b8;
+}
+.select{
+    appearance: none;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 4% 0;
+    color: #777777;
+}
+.input-container input{
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 4% 0;
+}
+.input-container a{
+    background-color: rgb(21, 126, 251);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: medium;
+    border-radius: 4px;
+}
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-page{
+    height: 100vh;
+}

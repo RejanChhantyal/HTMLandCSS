@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="form-main">
+            <div class="form-info">
+                <h1>Time Open</h1>
+                <p>MONDW - FRIDW</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <span style="color: gold;">+1 897 889</span>
+            </div>
+            <form action="">
+                <div class="white-inner">
+                    <h1>Reservation Form</h1>
+                <div class="first-line">
+                    <select name="" id="">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Person</option>
+                        <option value="3">3 Person</option>
+                    </select>
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                </div>
+                <div class="second-line">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="tel" name="" id="" placeholder="Phone">
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                <div class="input-butt">
+                    <button>RESERVE NOW</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-main{
+        height: 60%;
+        width: 70%;
+        display: flex;
+    }
+    .form-info{
+        height: 100%;
+        width: 40%;
+        gap: 4%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    form{
+        height: 100%;
+        width: 60%;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .white-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+    }
+    .first-line{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 8px;
+    }
+    .second-line{
+
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 8px;
+    }
+    
+    input{
+        color: black;
+        width: 30%;
+        height: 70%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+    }
+    input::placeholder{
+        color: black;
+    }
+    select{
+        width: 30%;
+        height: 70%;
+        text-align: center;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+    }
+    .input-butt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+    }
+    button{
+        padding: 12px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+</style>

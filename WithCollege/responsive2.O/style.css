@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    height: 100vh;
+}
+nav{
+    display: flex; 
+    justify-content: space-between;
+}
+.logo h2{
+    color: rgb(188, 120, 81); 
+    padding-left: 5px;
+}
+.intract{
+    width: 50%;
+}
+.intract ul{
+    display: flex; 
+    justify-content: right; 
+    list-style: none;
+    align-items: center;
+}
+.intract ul li{
+    font-size: medium;
+    padding: 10px;
+    font-weight: bold;
+}
+.button{
+    padding: 0 5px;
+    color: white;
+    background-color: rgb(188, 120, 81);
+}
+.button:hover{
+    background-color: #fff;
+    color: black;
+    color: rgb(188, 120, 81);
+}
+.first-page{
+    display: flex; 
+    align-items: center;
+}
+.content{
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(black,gray);
+    color: bisque;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.second-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rows{
+    height: 70%;
+    width: 20%;
+    margin: 20px;
+    transition: 0.5s;
+}
+.image{
+    height: 60%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    height: 40%;
+    position: relative;
+}
+h2{
+    padding-top: 7px;
+}
+.number{
+    background-color: rgb(194, 168, 20);
+    color: #fff;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: -30px;
+}
+.rows:hover{
+    flex: 1;
+}
+.third-page{
+    display: flex; 
+    height: 100vh; 
+    align-items: center; 
+    justify-content: center;
+}
+.left{
+    height: 70%; 
+    width: 1500px;
+}
+.left img{
+    height: 100%;
+    width: 100%;
+}
+.fourt-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.siders img{
+    height: 50px;
+    width: 50px;
+}
+
+.header{
+    width: 40%;
+    text-align: center;
+}
+.siders{
+   width: 20%;
+   gap: 4px;
+}
+.infos{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}

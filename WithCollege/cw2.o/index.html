@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="first">
+        <div class="info">
+            <h1><b>How long can you last?</b></h1>
+            <h3>A small river named Duden flows by their place and supplies it with the necessary regelialia.</h3>
+            <div class="click-video">
+                <div class="clicker" onclick="video_open(event)">
+                    <i class="ri-play-mini-fill"></i>
+                </div>
+                <div class="infos">
+                    <h3>Watch Games</h3>
+                </div>
+            </div>
+        </div>
+        <div class="paly-video" id="open_video">
+            <div class="video-sectio">
+                <video src="https://youtu.be/KDorKy-13ak"></video>
+                <div onclick="video_close(event)" class="close-button">
+                    <h3>Close</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="second">
+            <div class="top">
+                <div class="top-left">
+                    <div class="images">
+                        <div class="main-image">
+                            <img id="first-img" src="https://preview.colorlib.com/theme/knights/images/team-2.jpg" alt="">
+                            <img id="second-img" src="https://preview.colorlib.com/theme/knights/images/team-1.jpg" alt="">
+                        </div>
+                        <div class="image-info">
+                            <h3>Knights Warrior
+                                Mighty Falcons</h3>
+                        </div>
+                    </div>
+                    <div class="champins">
+                        <h3>FIFA Champions League <br>Semi-Final</h3>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="counts">
+                        <div class="counting">
+                            <h3><b>200</b><br>Days</h3>
+                        </div>
+                        <div class="counting">
+                            <h3><b>10</b><br>Hours</h3>
+                        </div>
+                        <div class="counting">
+                            <h3><b>200</b><br>Minutes</h3>
+                        </div>
+                        <div class="counting" id="end">
+                            <h3><b>60</b><br>Seconds</h3>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <button>Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    function video_open(event) {
+    event.preventDefault();
+    document.getElementById("open_video").style.display = "block";
+    }
+        
+    function video_close(event) {
+    event.preventDefault();
+    document.getElementById("open_video").style.display = "none";
+    }   
+</script>
